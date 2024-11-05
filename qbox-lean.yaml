@@ -50,10 +50,6 @@ tasks:
     ref: master
     src: https://github.com/Bob74/bob74_ipl
 
-  - action: download_github
-    dest: ./resources/[standalone]/safecracker
-    ref: main
-    src: https://github.com/qbox-project/safecracker
 
   - action: download_file
     path: ./tmp/screenshot-basic.zip
@@ -62,30 +58,13 @@ tasks:
     dest: ./resources/[standalone]/screenshot-basic
     src: ./tmp/screenshot-basic.zip
 
-  - action: download_github
-    dest: ./resources/[standalone]/mhacking
-    ref: main
-    src: https://github.com/qbox-project/mhacking
-
   - action: waste_time # prevent github throttling
     seconds: 10
-
-  - action: download_github
-    dest: ./resources/[standalone]/scully_emotemenu
-    ref: main
-    src: https://github.com/Scullyy/scully_emotemenu
 
   - action: download_github
     dest: ./resources/[standalone]/ultra-voltlab
     ref: main
     src: https://github.com/ultrahacx/ultra-voltlab
-
-  - action: download_file
-    path: ./tmp/Renewed-Banking.zip
-    url: https://github.com/Renewed-Scripts/Renewed-Banking/releases/latest/download/Renewed-Banking.zip
-  - action: unzip
-    dest: ./resources/[standalone]
-    src: ./tmp/Renewed-Banking.zip
 
   - action: download_file
     path: ./tmp/illenium-appearance.zip
@@ -101,35 +80,11 @@ tasks:
     subpath: MugShotBase64
 
   - action: download_file
-    url: https://raw.githubusercontent.com/BaziForYou/MugShotBase64/main/README.md
-    path: ./resources/[standalone]/MugShotBase64/README.md
-
-  - action: download_file
-    url: https://raw.githubusercontent.com/BaziForYou/MugShotBase64/main/LICENSE.md
-    path: ./resources/[standalone]/MugShotBase64/LICENSE.md
-
-  - action: download_file
-    path: ./tmp/loadscreen.zip
-    url: https://github.com/D4isDAVID/loadscreen/releases/latest/download/loadscreen.zip
-  - action: unzip
-    dest: ./resources/[standalone]
-    src: ./tmp/loadscreen.zip
-  - action: copy_path
-    src: ./myLogo.png
-    dest: ./resources/[standalone]/loadscreen/html/assets/logo.png
-    overwrite: true
-
-  - action: download_file
     path: ./tmp/mana_audio.zip
     url: https://github.com/Manason/mana_audio/releases/latest/download/mana_audio.zip
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/mana_audio.zip
-
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_idcard
-    ref: main
-    src: https://github.com/Qbox-project/qbx_idcard
 
     # VOICE
   - action: download_github
@@ -161,11 +116,6 @@ tasks:
   - action: query_database
     file: ./resources/[qbx]/qbx_vehicles/vehicles.sql
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_scoreboard
-    ref: main
-    src: https://github.com/qbox-project/qbx_scoreboard
-
   - action: download_file
     path: ./tmp/qbx_adminmenu.zip
     url: https://github.com/qbox-project/qbx_adminmenu/releases/latest/download/qbx_adminmenu.zip
@@ -177,39 +127,9 @@ tasks:
     seconds: 10
 
   - action: download_github
-    dest: ./resources/[qbx]/qbx_vehicleshop
-    ref: main
-    src: https://github.com/qbox-project/qbx_vehicleshop
-  - action: query_database
-    file: ./resources/[qbx]/qbx_vehicleshop/vehshop.sql
-
-  - action: download_file
-    path: ./tmp/qbx_hud.zip
-    url: https://github.com/qbox-project/qbx_hud/releases/latest/download/qbx_hud.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_hud.zip
-
-  - action: download_github
     dest: ./resources/[qbx]/qbx_seatbelt
     ref: main
     src: https://github.com/qbox-project/qbx_seatbelt
-
-  - action: download_file
-    path: ./tmp/qbx_management.zip
-    url: https://github.com/qbox-project/qbx_management/releases/latest/download/qbx_management.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_management.zip
-  - action: query_database
-    file: ./resources/[qbx]/qbx_management/qbx_management.sql
-
-  - action: download_file
-    path: ./tmp/qbx_garages.zip
-    url: https://github.com/qbox-project/qbx_garages/releases/latest/download/qbx_garages.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_garages.zip
 
   - action: download_github
     dest: ./resources/[qbx]/qbx_ambulancejob
@@ -250,16 +170,6 @@ tasks:
     dest: ./resources/[standalone]
     src: ./tmp/vehiclehandler.zip
 
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_police
-    ref: main
-    src: https://github.com/qbox-project/qbx_police
-
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_vehiclekeys
-    ref: main
-    src: https://github.com/qbox-project/qbx_vehiclekeys
-
   - action: download_file
     path: ./tmp/qbx_smallresources.zip
     url: https://github.com/qbox-project/qbx_smallresources/releases/latest/download/qbx_smallresources.zip
@@ -273,25 +183,6 @@ tasks:
   - action: unzip
     dest: ./resources/[qbx]
     src: ./tmp/qbx_density.zip
-
-  - action: download_github
-    dest: ./resources/[qbx]/qbx_cityhall
-    ref: main
-    src: https://github.com/qbox-project/qbx_cityhall
-
-  - action: download_file
-    path: ./tmp/qbx_spawn.zip
-    url: https://github.com/qbox-project/qbx_spawn/releases/latest/download/qbx_spawn.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_spawn.zip
-
-  - action: download_file
-    path: ./tmp/qbx_customs.zip
-    url: https://github.com/qbox-project/qbx_customs/releases/latest/download/qbx_customs.zip
-  - action: unzip
-    dest: ./resources/[qbx]
-    src: ./tmp/qbx_customs.zip
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -341,41 +232,6 @@ tasks:
     dest: ./resources/[ox]/ox_fuel
     ref: v1.4.0
     src: https://github.com/overextended/ox_fuel
-
-    # NPWD
-  - action: download_file
-    path: ./tmp/npwd.zip
-    url: https://github.com/project-error/npwd/releases/download/3.14.3/npwd.zip
-  - action: unzip
-    dest: ./resources/[npwd]/
-    src: ./tmp/npwd.zip
-
-  - action: query_database
-    file: ./resources/[npwd]/npwd/import.sql
-
-  - action: download_github
-    dest: ./resources/[npwd]/qbx_npwd
-    ref: main
-    src: https://github.com/Qbox-project/qbx_npwd
-
-  - action: move_path
-    src: ./resources/[npwd]/qbx_npwd/config.json
-    dest: ./resources/[npwd]/npwd/config.json
-    overwrite: true
-
-  - action: download_file
-    path: ./tmp/npwd_qbx_garages.zip
-    url: https://github.com/Qbox-project/npwd_qbx_garages/releases/latest/download/npwd_qbx_garages.zip
-  - action: unzip
-    dest: ./resources/[npwd-apps]
-    src: ./tmp/npwd_qbx_garages.zip
-
-  - action: download_file
-    path: ./tmp/npwd_qbx_mail.zip
-    url: https://github.com/Qbox-project/npwd_qbx_mail/releases/latest/download/npwd_qbx_mail.zip
-  - action: unzip
-    dest: ./resources/[npwd-apps]
-    src: ./tmp/npwd_qbx_mail.zip
 
 
   # Clean up
